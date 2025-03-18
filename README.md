@@ -1,10 +1,10 @@
-# Super Trunfo de Países - Cadastro de Cartas
+# Super Trunfo de Países - Cadastro de Cartas e Cálculos Adicionais
 
-Este é um projeto simples que simula a criação de um jogo de **Super Trunfo** utilizando dados de cidades brasileiras. O programa permite que o usuário insira informações sobre duas cartas, que representam cidades de diferentes estados, e exibe essas informações de forma organizada.
+Este projeto simula a criação de um jogo **Super Trunfo** utilizando dados de cidades brasileiras. O programa permite ao usuário inserir informações sobre duas cidades e exibir esses dados de forma organizada. Na **Parte 2**, o programa foi aprimorado para incluir o cálculo da **densidade populacional** e **PIB per capita**.
 
-## Funcionalidade
+## Parte 1: Cadastro das Cartas
 
-O programa em C permite ao usuário inserir as seguintes informações para cada carta do jogo:
+Na primeira parte do projeto, o objetivo era criar um sistema simples de cadastro das cartas do Super Trunfo. O programa permite que o usuário insira os seguintes dados sobre cada cidade:
 
 - **Estado**: Uma letra de 'A' a 'H' representando um estado.
 - **Código da Carta**: Uma combinação do estado e um número de 01 a 04 (exemplo: A01, B03).
@@ -14,31 +14,24 @@ O programa em C permite ao usuário inserir as seguintes informações para cada
 - **PIB**: O Produto Interno Bruto da cidade em bilhões de reais.
 - **Número de Pontos Turísticos**: O número de pontos turísticos na cidade.
 
-Após o usuário inserir os dados de duas cartas, o programa exibe essas informações de forma organizada e legível.
+Após o usuário inserir as informações, o programa exibe os dados de cada carta de forma organizada e legível.
 
-## Como Executar o Programa
-
-### Pré-requisitos
-
-Você precisa ter um compilador C instalado, como o `gcc` (GNU Compiler Collection), para compilar e executar o código.
-
-### Passos
-
-1. **Clone o repositório ou baixe o código**:
-git clone https://github.com/seu-usuario/super-trunfo.git 
-
-2. **Compile o código**:
-Se estiver usando `gcc`, execute:
-gcc super_trunfo.c -o super_trunfo
+### Funcionalidades da Parte 1:
+- Leitura de dados do usuário sobre as cidades.
+- Armazenamento das informações em variáveis apropriadas.
+- Exibição dos dados de forma organizada.
 
 
-3. **Execute o programa**:
-Após compilar, execute o programa gerado:
-./super_trunfo
+## Parte 2: Cálculos Adicionais - Densidade Populacional e PIB per Capita
 
+Na segunda parte do projeto, o sistema foi aprimorado para calcular e exibir duas novas informações sobre cada cidade:
 
-4. **Siga as instruções na tela**:
-O programa pedirá para você inserir as informações sobre as duas cartas. Após inserir os dados, ele exibirá as cartas com as informações fornecidas.
+1. **Densidade Populacional**: Representa o número de habitantes por quilômetro quadrado, calculada dividindo a população da cidade pela sua área.
+2. **PIB per Capita**: Representa a riqueza média por pessoa na cidade, calculada dividindo o PIB da cidade pela sua população.
+
+### Funcionalidades da Parte 2:
+- O programa agora calcula a **densidade populacional** e o **PIB per capita** para cada cidade.
+- Exibe as informações adicionais de forma clara e formatada com duas casas decimais.
 
 
 
