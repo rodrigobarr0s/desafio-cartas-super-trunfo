@@ -33,5 +33,68 @@ Na segunda parte do projeto, o sistema foi aprimorado para calcular e exibir dua
 - O programa agora calcula a **densidade populacional** e o **PIB per capita** para cada cidade.
 - Exibe as informações adicionais de forma clara e formatada com duas casas decimais.
 
+# Parte 3: Batalha de Cartas no Super Trunfo
 
+Na terceira parte do projeto, o sistema foi aprimorado para permitir a comparação entre duas cartas, levando em consideração todos os atributos numéricos, incluindo o cálculo do **Super Poder** de cada cidade. Além disso, o programa agora compara as cartas atributo por atributo e exibe quem venceu em cada comparação.
+
+### Funcionalidades da Parte 3:
+- **Super Poder**: Calculado somando todos os atributos numéricos, incluindo:
+  - População
+  - Área
+  - PIB
+  - Número de pontos turísticos
+  - PIB per capita
+  - O inverso da densidade populacional (quanto menor a densidade, maior o poder)
+  
+- **Comparação das Cartas**: As cartas são comparadas de acordo com os seguintes critérios:
+  - **População, Área, PIB, Pontos Turísticos, PIB per Capita e Super Poder**: A carta com o maior valor vence.
+  - **Densidade Populacional**: A carta com a menor densidade vence (quanto menor a densidade, maior o poder).
+  
+- **Exibição dos Resultados**: O programa exibe qual carta venceu para cada atributo.
+
+## Como Usar
+
+### Passo 1: Compilação
+Para compilar o código em um ambiente Linux ou Mac, execute o seguinte comando:
+
+```bash
+gcc -o super_trunfo super_trunfo.c
+```
+Para Windows, utilize o compilador de sua preferência.
+
+### Passo 2: Execução
+
+Após a compilação, execute o programa com o seguinte comando:
+
+```bash
+./super_trunfo
+```
+
+### Passo 3: Inserção de Dados
+
+O programa pedirá para você inserir os seguintes dados para duas cartas:
+
+- **Estado** (uma letra de 'A' a 'H')
+- **Código da Carta** (letra do estado seguida de um número de 01 a 04, por exemplo: A01, B03)
+- **Nome da Cidade**
+- **População** (número inteiro)
+- **Área** (em km², número flutuante)
+- **PIB** (em bilhões de reais, número flutuante)
+- **Pontos Turísticos** (número inteiro)
+
+### Passo 4: Resultados
+
+Após inserir os dados, o programa exibirá os resultados das comparações de todas as cartas, indicando qual carta venceu em cada atributo:
+
+- **População**
+- **Área**
+- **PIB**
+- **Pontos Turísticos**
+- **Densidade Populacional**
+- **PIB per Capita**
+- **Super Poder**
+
+## Contribuições
+
+Se você desejar contribuir com melhorias ou sugestões para o código, sinta-se à vontade para abrir uma **issue** ou enviar um **pull request**.
 
