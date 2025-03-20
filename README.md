@@ -33,7 +33,7 @@ Na segunda parte do projeto, o sistema foi aprimorado para calcular e exibir dua
 - O programa agora calcula a **densidade populacional** e o **PIB per capita** para cada cidade.
 - Exibe as informações adicionais de forma clara e formatada com duas casas decimais.
 
-# Parte 3: Batalha de Cartas no Super Trunfo
+## Parte 3: Batalha de Cartas no Super Trunfo
 
 Na terceira parte do projeto, o sistema foi aprimorado para permitir a comparação entre duas cartas, levando em consideração todos os atributos numéricos, incluindo o cálculo do **Super Poder** de cada cidade. Além disso, o programa agora compara as cartas atributo por atributo e exibe quem venceu em cada comparação.
 
@@ -51,6 +51,23 @@ Na terceira parte do projeto, o sistema foi aprimorado para permitir a comparaç
   - **Densidade Populacional**: A carta com a menor densidade vence (quanto menor a densidade, maior o poder).
   
 - **Exibição dos Resultados**: O programa exibe qual carta venceu para cada atributo.
+
+## Parte 4: Comparando Cartas do Super Trunfo
+
+Após o cadastro das cartas, o programa permite a comparação de duas cartas com base em um atributo específico. O código compara atributos como **População**, **Área**, **Densidade Populacional**, **PIB per Capita** e **Super Poder**. Aqui está como funciona a comparação:
+
+### Como o programa compara as cartas:
+- **População**: A carta com a maior população vence.
+- **Área**: A carta com a maior área vence.
+- **PIB**: A carta com o maior PIB vence.
+- **Pontos Turísticos**: A carta com o maior número de pontos turísticos vence.
+- **Densidade Populacional**: A carta com a menor densidade populacional vence (quanto menor a densidade, maior o poder).
+- **PIB per Capita**: A carta com o maior PIB per capita vence.
+- **Super Poder**: A carta com o maior "super poder" vence, que é a soma de vários atributos, incluindo o inverso da densidade populacional.
+
+### Exemplo de Comparação de Cartas:
+
+Após o usuário inserir os dados de duas cartas, o programa exibe as comparações de cada atributo e declara qual carta venceu em cada caso.
 
 ## Como Usar
 
@@ -97,4 +114,3 @@ Após inserir os dados, o programa exibirá os resultados das comparações de t
 ## Contribuições
 
 Se você desejar contribuir com melhorias ou sugestões para o código, sinta-se à vontade para abrir uma **issue** ou enviar um **pull request**.
-
