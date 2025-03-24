@@ -93,6 +93,39 @@ Na quinta parte do projeto, foi implementado um menu interativo usando `switch` 
 
 - **Exibição dos Resultados**: Após a escolha do atributo, o programa exibe qual carta venceu, incluindo o nome dos dois países, o atributo usado na comparação, os valores do atributo para cada carta e o vencedor.
 
+## Parte 6: Comparação Avançada com Atributos Múltiplos
+
+Na sexta parte do projeto, foi implementada uma lógica de comparação ainda mais avançada, permitindo que o jogador escolha **dois atributos** diferentes para comparar as cartas. Essa melhoria permite comparar cartas com base em dois atributos simultaneamente, calculando a soma dos valores desses atributos para decidir qual carta vence. Abaixo estão as principais funcionalidades implementadas:
+
+### Como Funciona:
+
+1. **Escolha de Dois Atributos**: O usuário pode escolher dois atributos numéricos diferentes para a comparação das cartas. Após o primeiro atributo ser escolhido, o segundo menu exibe apenas os atributos restantes, garantindo que o jogador não escolha o mesmo atributo duas vezes.
+   
+2. **Comparação de Atributos**: O sistema compara as cartas com base nos dois atributos escolhidos, de acordo com as seguintes regras:
+    - **População, Área, PIB, Pontos Turísticos, PIB per Capita**: A carta com o maior valor em cada atributo vence.
+    - **Densidade Populacional**: A carta com a menor densidade populacional vence (quanto menor a densidade, maior o poder).
+
+3. **Soma dos Atributos**: Após as comparações individuais de cada atributo, os valores de ambos os atributos são somados para cada carta. A carta com a maior soma vence a rodada.
+
+4. **Tratamento de Empates**: Caso a soma dos valores dos atributos para ambas as cartas seja igual, o sistema exibe a mensagem **"Empate!"**.
+
+5. **Menus Dinâmicos**: Para garantir uma navegação fluida, o sistema implementa menus dinâmicos. Após o primeiro atributo ser escolhido, o segundo menu exibe apenas os atributos restantes, garantindo que o jogador não possa escolher o mesmo atributo duas vezes.
+
+### Funcionalidades da Parte 6:
+
+- **Escolha de Atributos para Comparação**: O jogador escolhe dois atributos para comparar as cartas, com restrições para não selecionar o mesmo atributo duas vezes.
+- **Comparação de Dois Atributos**: O sistema compara as cartas com base nos dois atributos escolhidos, seguindo as regras mencionadas.
+- **Cálculo da Soma dos Atributos**: Após a comparação, o sistema soma os valores dos atributos para cada carta e exibe a carta vencedora.
+- **Tratamento de Empates**: Caso as somas sejam iguais, o sistema exibe **"Empate!"**.
+- **Exibição Clara do Resultado**: O resultado é exibido de forma organizada, mostrando os dois atributos comparados, os valores para cada carta, a soma dos atributos e o vencedor.
+
+### Exemplo de Comparação:
+
+1. O jogador escolhe **População** e **PIB** para comparar as cartas.
+2. O sistema compara os dois atributos e exibe os valores de **População** e **PIB** para cada carta.
+3. A soma dos valores de **População** e **PIB** de cada carta é calculada.
+4. A carta com a maior soma vence a rodada. Caso a soma seja igual, o sistema declara **"Empate!"**.
+
 
 ## Como Usar
 
